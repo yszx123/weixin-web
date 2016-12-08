@@ -23,8 +23,8 @@ public class MessageResponse {
 	public static String getTextMessage(String fromUserName , String toUserName , String respContent) {
 		
 		TextMessage textMessage = new TextMessage();
-		textMessage.setToUserName(fromUserName);
-		textMessage.setFromUserName(toUserName);
+		textMessage.setToUserName(toUserName);
+		textMessage.setFromUserName(fromUserName);
 		textMessage.setCreateTime(new Date().getTime());
 		textMessage.setMsgType(MsgType.TEXT);
 		textMessage.setContent(respContent);

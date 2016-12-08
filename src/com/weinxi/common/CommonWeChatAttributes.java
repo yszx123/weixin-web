@@ -117,7 +117,7 @@ public final class CommonWeChatAttributes {
 	/*
 	 *给用户发送消息
 	 */
-	public static final String SENDMSG="https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=ACCESS_TOKEN";
+	public static final String SENDMSG="https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token={0}";
 
 	
 	/*
@@ -130,6 +130,11 @@ public final class CommonWeChatAttributes {
 	 */
 	public static final String GET_QRCODE = "https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=TICKET";
 	
+	/*
+	 * 消息模版
+	 */
+	public static final String SEND_TEMPLATE_MSG="https://api.weixin.qq.com/cgi-bin/message/template/send?access_token={0}";
+	
 	
 	/**
 	 * 获取关注用户的列表
@@ -139,7 +144,7 @@ public final class CommonWeChatAttributes {
 	 * 
 	 */
 	
-	public static final String GET_ALL_USER = "https://api.weixin.qq.com/cgi-bin/user/get?access_token=ACCESS_TOKEN";
+	public static final String GET_ALL_USER = "https://api.weixin.qq.com/cgi-bin/user/get?access_token={0}";
 
 	/**
 	 * 获取用户基本信息
